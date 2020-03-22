@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [31 50])
+            ("string" include (:system-flag t) nil [51 68])
+            ("vector" include (:system-flag t) nil [69 86])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [88 106])
+            ("Foo" type
+               (:members 
+                  ( ("bar" variable (:type "int") (reparse-symbol classsubparts) [123 131])
+                    ("GetBar" function (:type "int") (reparse-symbol classsubparts) [134 162])
+                    ("SetBar" function
+                       (:arguments 
+                          ( ("b" variable (:type "int") (reparse-symbol arg-sub-list) [181 187]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [169 200]))                  
+                :type "struct")
+                nil [108 203])
+            ("main" function (:type "int") nil [205 294]))          
+      :file "test.cpp"
+      :pointmax 295
+      :fsize 294
+      :lastmodtime '(24163 33918 155249 302000)
+      :unmatched-syntax nil))
+  :file "!Users!luojiebin!workspace!cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
